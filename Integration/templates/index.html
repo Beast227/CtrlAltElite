@@ -1,0 +1,44 @@
+<!-- templates/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot Interface</title>
+    <style>
+        /* Add your styles here */
+    </style>
+</head>
+<body>
+    <div id="chat-container">
+        <div id="chat-display"></div>
+        <div id="user-input">
+            <input type="text" id="user-message" placeholder="Type your message...">
+            <button onclick="sendMessage()">Send</button>
+        </div>
+    </div>
+
+    <script>
+        function sendMessage() {
+            var userMessage = document.getElementById('user-message').value;
+            document.getElementById('chat-display').innerHTML += '<p>User: ' + userMessage + '</p>';
+            document.getElementById('user-message').value = '';
+
+            // Send the message to the server
+            fetch('/ask', {
+                method: 'POST',
+                body: new URLSearchParams({ 'user_message': userMessage }),
+                headers: {
+                    'Content-Type': 'application/x-www-form-urlencoded'
+                }
+            })
+            .then(response => response.json())
+            .then(data => {
+                var botResponse = data.bot_response;
+                document.getElementById('chat-display').innerHTML += '<p>Bot: ' + botResponse + '</p>';
+            });
+        }
+    </script>
+</body>
+</html>

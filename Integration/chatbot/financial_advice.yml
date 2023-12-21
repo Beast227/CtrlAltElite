@@ -1,0 +1,57 @@
+intents:
+  - tag: greeting
+    patterns:
+      - "Hello"
+      - "Hi"
+      - "Hey"
+    responses:
+      - "Hello! I'm your AI-powered financial advisor. How can I assist you today?"
+
+  - tag: introduction
+    patterns:
+      - "Who are you?"
+      - "What do you do?"
+      - "Tell me about yourself"
+    responses:
+      - "I am an AI-powered financial advisor. I can provide personalized investment advice based on your financial goals and risk profile."
+
+  - tag: risk_profile
+    patterns:
+      - "What is my risk profile?"
+      - "Assess my risk tolerance"
+      - "Determine risk level"
+    responses:
+      - "To assess your risk profile, I'll need some information. Can you tell me more about your financial goals and how comfortable you are with investment risk? (e.g., conservative, moderate, aggressive)"
+
+  - tag: set_goals
+    patterns:
+      - "How can I set financial goals?"
+      - "Define investment goals"
+      - "Set goals for investments"
+    responses:
+      - "Setting financial goals is crucial. What are your short-term and long-term financial objectives? (e.g., buying a house, retirement, education)"
+
+  - tag: personalized_advice
+    patterns:
+      - "Give me investment advice"
+      - "What should I invest in?"
+      - "Recommend investments"
+    responses:
+      - "To provide personalized advice, I need to understand your risk tolerance, financial goals, and investment horizon. Can you share more details?"
+
+  - tag: thank_you
+    patterns:
+      - "Thank you"
+      - "Thanks"
+      - "Appreciate it"
+    responses:
+      - "You're welcome! If you have more questions or need further assistance, feel free to ask."
+
+  - tag: fallback
+    patterns:
+      - "I don't know"
+      - "Not sure"
+      - "Can you repeat that?"
+    responses:
+      - "I'm sorry if my response was unclear. Feel free to ask me anything related to financial advice, risk profiles, or investment goals."
+

@@ -1,0 +1,87 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Hi",
+        "Hey",
+        "How are you",
+        "Is anyone there?",
+        "Hello",
+        "Good day"
+      ],
+      "responses": [
+        "Hey Master !",
+        "Hello, thanks for visiting",
+        "Hi there, what can I do for you?",
+        "Hi there, how can I help?"
+      ]
+    },
+    {
+      "tag":"Questions",
+      "patterns":["Who are you","Who created you","Who built you","who designed you"],
+      "responses":["Hi, I am Paneo and i was built and designed by team 'CtrlAltElite'"]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": ["Bye", "See you later", "Goodbye"],
+      "responses": [
+        "See you later, thanks for visiting",
+        "Have a nice day",
+        "Bye! Come back again soon."
+      ]
+    },
+    {
+      "tag":"Selecting a stock for investment",
+      "patterns":["How to select a stock for investment","What should we consider if we are buying stocks for the first time","What paramenters should we coonsider while purschasing a stock"],
+      "responses":["Determine your investing goals \n1)Find companies you understand\n2)Determine whether a company has a competitive advantage\n3)Determine a fair price for the stock\n4)Buy a stock with a margin of safety"]
+    },
+    {
+      "tag":"SIP funds ",
+      "patterns":["what are some best SIP funds to invest in"," best SIP funds to invest in "],
+      "responses":["1) Quant Active Fund\tmin invest:1000 rupees\tReturns p.a: 30.39%\n2)Quant Large and Mid Cap Fund\tmin invest:1000 rupees\tReturns p.a: 27.52%\n3)Parag Parikh Flexi Cap Fund\tmin invest:1000 rupees\tReturns p.a: 24.92%\n4)Quant Focused Fund\tmin invest:1000 rupees\tReturns p.a: 24.85%\n5)Edelweiss Large & Mid Cap Fund\tmin invest: 500 rupees\tReturns p.a: 22.88%\n6)Kotak Equity Opportunities Fund\tmin invest:500 rupees\treturns p.a:22.55%\n8)Axis Bluechip Fund\tmin invest:100 rupees\treturns p.a:14.08%\n"]
+    },
+    
+    {
+      "tag": "thanks",
+      "patterns": ["Thanks", "Thank you", "That's helpful", "Thank's a lot!"],
+      "responses": ["Happy to help!", "Any time!", "My pleasure"]
+    },
+    {
+      "tag":"Gold mutual funds",
+      "patterns":["What are some gold mutual funds","Best gold mututal funds","Gold mutual funds"],
+      "responses":["1)Axis Gold Fund\t\tmin invest: 1000 rupees\t\tReturn p.a:11.29%\n2)Invesco India \t\tmin invest:500 rupees\t\tReturn p.a:11.17%\n3)HDFC Gold Direct Plan-Growth\t\tmin invest:105 rupees\t\tReturn p.a: 11.17%\n4)SBI Gold fund\t\tmin invest:500 rupees\t\tReturn p.a:11.11%\n5)Nippon India Gold Savings Fund\t\tmin invest:500 rupees\t\tReturn p.a:10.97%"]     
+    },
+    {
+      "tag":"Crypto",
+      "patterns":["Best cryptos for investment","List some cryptos for investing","top cryptos to buy"],
+      "responses":["1. Bitcoin (BTC)\n 2. Ethereum (ETH)\n 3.Tether (USDT)\n 4. Binance Coin (BNB)\n 5. XRP (XRP)\n 6. Solana (SOL)\n  7.U.S. Dollar Coin (USDC)\n 8. Cardano (ADA)\n 9. Avalanche (AVAX)\n 10. Dogecoin (DOGE) "]
+    },
+    {
+      "tag": "add_portfolio",
+      "patterns": ["add portfolio", "include investment", "portfolio management"],
+      "responses": ["To add an investment to your portfolio, use our investment management tools or consult with a financial advisor."]
+    },
+    {
+      "tag":"Retirement policies",
+      "patterns":["Suggest some good investment plans for retiremnet ","give me some retirement policies","best retirement policies"],
+      "responses":["After careful evaluation of 310 life insurance plans available in India, we selected seven best retirement policies, as follows: \n1)IndiaFirst Life Insurance\t\tGuaranteed Retirement Plan \n 2)Bajaj Insurance Life Insurance\t\tLongLife Goal \n 3)Tata AIA Life Insurance\t\t Wealth Pro \n 4)HDFC Life Guaranteed Pension Plan \n 5)Canara HSBC Life Insurance\t\tPension4LIfe \n 6)ICICI Prudential Life Insurance\t\tGuaranteed Pension Plan\n 7)Kotak Mahindra Life Insurance\t\tAssured Pension\n " ]
+    },
+  {
+      "tag": "remove_portfolio",
+      "patterns": ["remove portfolio", "sell investment", "remove from portfolio"],
+      "responses": ["To remove an investment from your portfolio, use our investment management tools or consult with a financial advisor."]
+  },
+  {
+      "tag": "show_portfolio",
+      "patterns": ["show portfolio", "view investments", "portfolio overview"],
+      "responses": ["You can view your portfolio and investment details through our online investment portal."]
+  },
+  {
+    "tag":"Long term investment",
+    "patterns":["Best stocks for long term investment","stocks to invest for long run","shares for long term investment"],
+    "responses":[" Long term investing is a popular investment strategy that intelligent retail investors use to grow their money \n 1)Reliance\n2)Tata Consultancy Services (TCS) \n3)Infosysc\n4)HDFC Bank \n5)Hindustan Unilever"]
+  }
+    
+  ]
+}
